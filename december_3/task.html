@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --red: #FF0000;
+      --green: #008000;
+      --white: #ffffff;
+      --purple: #29093c;
+    }
+
+    body {
+      height: 100%;
+      display: block;
+      font-family: "Delius Swash Caps", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .bg-img {
+      height: 100%;
+      background: var(--purple);
+    }
+
+    #text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 50px;
+      color: var(--red);
+
+    }
+
+    .section {
+      height: 60vh;
+    }
+
+    .tree {
+      max-width: 20%;
+      height: auto;
+    }
+
+    #button {
+      display: inline-block;
+      width: 260px;
+      margin: 20px;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: var(--white);
+      background-image: linear-gradient(to right, var(--red), var(--green));
+      border: none;
+      border-radius: 15px;
+      box-shadow: 10px 10px 8px var(--green);
+    }
+
+    #button:hover {
+      border: 5px solid var(--green);
+    }
+
+    .footer {
+      margin-top: 20px;
+    }
+
+    #surprise {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      margin: auto;
+    }
+
+    .gift {
+      max-width: 60%;
+      height: auto;
+      margin: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-img">
+    <div id="text">
+
+      <header>
+        <h1>
+          &#x1F31F; Welcome to the Christmas Wonderland! &#x1F31F;
+        </h1>
+      </header>
+
+      <section class="section">
+        <img src="./christmas_tree.png" alt="Christmas tree" class="tree">
+        <h2>May your holidays sparkle with joy and laughter!</h2>
+        <button type="button" onclick="showGift()" id="button"> &#127873 Open Your Gift &#127873</button>
+      </section>
+
+      <footer class="footer">
+        <h3>
+          Made with &#x1F49D; for the holiday season.
+        </h3>
+      </footer>
+    </div>
+
+    <div id="surprise">
+      <img src="./gift_box.png" alt="Gift box" class="gift">
+      <button type="button" onclick="hideGift()" id="button">&#127873; &#11013; Back &#127873;</button>
+    </div>
+  </div>
+  
+  <script>
+    function showGift() {
+      document.getElementById("text").style.display = "none";
+      document.getElementById("surprise").style.display = "flex";
+    }
+    function hideGift() {
+      document.getElementById("surprise").style.display = "none";
+      document.getElementById("text").style.display = "flex";
+    }
+  </script>
+</body>
+
+</html>
