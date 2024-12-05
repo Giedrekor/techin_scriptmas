@@ -72,8 +72,7 @@
 .row7 div:nth-child(2),.row7 div:nth-child(3), .row7 div:nth-child(5), .row7 div:nth-child(6), .row7 div:nth-child(7), .row7 div:nth-child(8), .row7 div:nth-child(9), .row7 div:nth-child(8),
 .row8 div:nth-child(2),.row8 div:nth-child(3), .row8 div:nth-child(4), .row8 div:nth-child(6), .row8 div:nth-child(7), .row8 div:nth-child(9), .row8 div:nth-child(10),
 .row9 div:nth-child(1),.row9 div:nth-child(3), .row9 div:nth-child(4), .row9 div:nth-child(5),.row9 div:nth-child(6), .row9 div:nth-child(7), .row9 div:nth-child(8), .row9 div:nth-child(9),.row9 div:nth-child(11),
-.row10 div:nth-child(1),.row10 div:nth-child(2),.row10 div:nth-child(3), .row10 div:nth-child(5), .row10 div:nth-child(6), .row10 div:nth-child(8), .row10 div:nth-child(9), .row10 div:nth-child(10), .row10 div:nth-child(11)
-{
+.row10 div:nth-child(1),.row10 div:nth-child(2),.row10 div:nth-child(3), .row10 div:nth-child(5), .row10 div:nth-child(6), .row10 div:nth-child(8), .row10 div:nth-child(9), .row10 div:nth-child(10), .row10 div:nth-child(11) {
   background-color: var(--green);
 }
 
@@ -83,7 +82,6 @@
 
 .row11 div:nth-child(5), .row11 div:nth-child(6),.row11 div:nth-child(7) {
     background-color: var(--brown);
-
 }
 
 
